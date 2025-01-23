@@ -1,0 +1,66 @@
+.heading{
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.subHeading{
+  font-style: italic;
+  text-align: left;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+.flightsSidebarContents{
+  background-color:white;
+  margin: 15px;
+  padding: 10px;
+
+  min-width: 120px;
+}
+
+.subSubheading{
+  font-style: italic;
+}
+
+#preferredAirports, #sortingPreference{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.filterCategory{
+  margin-bottom: 20px;
+}
+
+.userInputDropdown{
+  max-width: 60%;
+}
+
+.userInputNumberfield{
+  width: 35%;
+}
+
+#passengerQuantity{
+  width: 20.7%;
+}
+
+#concern{
+  width: 55%;
+}
+
+img.flightsSidebarIcon{
+  width: 20px;
+}
+
+.rowFix{
+  display: flex;
+  flex-direction: row;
+}
+
+.middleSpaceHolder{
+  flex:1;
+}
+
+.spanningText{
+  flex:1;
+  text-align: center;
+}

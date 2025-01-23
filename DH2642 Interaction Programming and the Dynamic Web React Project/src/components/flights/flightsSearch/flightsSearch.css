@@ -1,0 +1,117 @@
+.searchBar{
+    background-color: #555555;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    align-items: center;
+
+}
+
+.row>*{
+    width: 35%;
+    height:40%;
+    margin:10px;
+}
+
+.row>button{
+    min-width: fit-content;
+    width:15%;
+    background-color: white;
+    border: 2px solid #4CAF50;
+    color:black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.row>button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.row>button:focus{
+    outline:#4CAF50;
+}
+
+.row label{
+    color:white;
+    margin-right: 10px;
+}
+
+#depContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+    background-color: white;
+    margin:20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding:50px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.3);
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    cursor: pointer;
+}
+
+.card>a,.card>a:visited,.card>a:active{
+    color:black;
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.content>*{
+    width:35%;
+    height:40%;
+    text-align: center;
+}
+
+.riskSummary{
+    text-align: left;
+}
+
+.riskSummary img{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.largeText{
+    font-size: x-large;
+}
+
+.Very-High{
+    color:red;
+}
+
+.High{
+    color: orangered;
+}
+
+.Low{
+    color:orange;
+}
+
+.Very-Low{
+    color:green;
+}

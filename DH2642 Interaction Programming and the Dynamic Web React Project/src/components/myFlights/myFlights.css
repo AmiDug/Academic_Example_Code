@@ -1,0 +1,88 @@
+#container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color:white;
+  margin: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 6px 9px 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#title{
+  text-align: left;
+  font-weight: bold;
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
+.rows{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  flex-direction: row;
+  background-color: #eee;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+}
+
+.rows:hover{
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+#savedFlights th,#savedFlights td{
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.removeButton{
+  color: black;
+  padding: 5px 20px;
+  margin-right: 10px;
+  text-align: center !important;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.removeButton:hover{
+  background-color: #993333;
+  color: white;
+}
+
+#sortButtons{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.sortButton{
+  flex: 0.2;
+  background-color: #333;
+  color:white;
+  padding: 5px 20px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.sortButton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.sortButton:focus{
+    outline:#4CAF50;
+}

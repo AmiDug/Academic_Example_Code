@@ -1,0 +1,2 @@
+const apiConfig="02431be38bmsh089321cef70a9c3p1ef4ecjsnff082ed90036";
+export default apiConfig;
