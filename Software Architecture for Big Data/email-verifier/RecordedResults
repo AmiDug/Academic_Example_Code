@@ -1,0 +1,40 @@
+bansheebomb@bansheebomb-VirtualBox:~/Downloads/email-verifier$ k6 run test.js
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+     execution: local
+        script: test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 10 max VUs, 1m0s max duration (incl. graceful stop):
+              * default: Up to 10 looping VUs for 30s over 1 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+
+     ✗ is status 204
+      ↳  0% — ✓ 0 / ✗ 79399
+
+     checks.....................: 0.00%   ✓ 0           ✗ 79399
+     data_received..............: 3.6 MB  119 kB/s
+     data_sent..................: 15 MB   487 kB/s
+     http_req_blocked...........: avg=1.53µs   min=487ns    med=815ns    max=14.11ms p(90)=1.26µs  p(95)=1.85µs 
+     http_req_connecting........: avg=465ns    min=0s       med=0s       max=14.06ms p(90)=0s      p(95)=0s     
+     http_req_duration..........: avg=1.82ms   min=114.23µs med=923.49µs max=48.82ms p(90)=4ms     p(95)=7.86ms 
+     http_req_failed............: 100.00% ✓ 79399       ✗ 0    
+     http_req_receiving.........: avg=100.23µs min=3.23µs   med=8.21µs   max=35.76ms p(90)=18.39µs p(95)=49.34µs
+     http_req_sending...........: avg=11.56µs  min=3.38µs   med=4.84µs   max=26.7ms  p(90)=7.2µs   p(95)=10.96µs
+     http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s      p(90)=0s      p(95)=0s     
+     http_req_waiting...........: avg=1.71ms   min=101.81µs med=875.01µs max=48.79ms p(90)=3.73ms  p(95)=7.39ms 
+     http_reqs..................: 79399   2646.302918/s
+     iteration_duration.........: avg=1.88ms   min=148.9µs  med=966.42µs max=48.9ms  p(90)=4.1ms   p(95)=7.97ms 
+     iterations.................: 79399   2646.302918/s
+     vus........................: 9       min=1         max=9  
+     vus_max....................: 10      min=10        max=10 
+
+
+running (0m30.0s), 00/10 VUs, 79399 complete and 0 interrupted iterations
+default ✓ [======================================] 00/10 VUs  30s
+
